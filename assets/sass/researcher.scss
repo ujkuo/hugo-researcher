@@ -8,6 +8,7 @@ $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param"style.fontSize" | default "x-large" }};
 
 // Margins
 $y-small: 0.6rem;
@@ -68,7 +69,6 @@ $y-medium: 1.0rem;
         font-size: 16pt;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-size: medium;
         font-weight: bold;
         margin: $y-medium 0 $y-small 0;
     }
@@ -161,5 +161,6 @@ $y-medium: 1.0rem;
 #footer {
     a {
         @extend %link-dark;
+        font-size: 24px;
     }
 }

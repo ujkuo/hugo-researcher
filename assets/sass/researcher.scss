@@ -57,6 +57,7 @@ $y-medium: 1.0rem;
 }
 .nav-link {
     @extend %link-default;
+    font-size: 1.2rem;
 }
 #content {
     a {
@@ -64,6 +65,7 @@ $y-medium: 1.0rem;
     }
     p {
         margin-bottom: $y-small;
+        font-size: 16pt;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
@@ -72,7 +74,7 @@ $y-medium: 1.0rem;
     }
     @for $i from 1 through 4 {
         h#{$i} {
-            font-size: 1.2rem + 0.2 * (4 - $i);
+            font-size: 2.0rem + 0.2 * (4 - $i);
         }
     }
     img {
@@ -90,6 +92,7 @@ $y-medium: 1.0rem;
     ol {
         counter-reset: list;
         list-style: none;
+        font-size: 16pt;
         padding-left: 2rem;
         & > li {
             display: table-row;
@@ -107,6 +110,7 @@ $y-medium: 1.0rem;
     }
     ul {
         list-style: inside;
+        font-size: 16pt;
         padding-left: 2rem;
         & > li {
             list-style-position: outside;
@@ -145,6 +149,7 @@ $y-medium: 1.0rem;
     }
     pre code {
         all: unset;
+        font-size: 16pt;
     }
     .highlight {
         margin: $y-medium auto;

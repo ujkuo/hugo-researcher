@@ -8,7 +8,7 @@ $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
-$font-size: {{ .Param"style.fontSize" | default "x-large" }};
+$font-size: {{ .Param "style.fontSize" | default "x-large" }};
 
 // Margins
 $y-small: 0.6rem;
